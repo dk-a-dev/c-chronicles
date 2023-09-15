@@ -28,7 +28,7 @@ int main(int argc, char const *argv[])
     p0=(char*)p; // typecasting
     printf("size of char %d\n",sizeof(char));
     printf("address of p0=%d,value=%d\n",p0,*p0);
-    printf("address of p0=%d,value=%d\n",p0+1,*(p0+1));
+    printf("address of p0+1=%d,value=%d\n",p0+1,*(p0+1));
 
     //VOID POINTERS=Generic pointer type
     void *p1;
