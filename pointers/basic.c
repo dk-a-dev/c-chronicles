@@ -31,6 +31,7 @@ int main(int argc, char const *argv[])
     printf("address of p0+1=%d,value=%d\n",p0+1,*(p0+1));
 
     //VOID POINTERS=Generic pointer type
+    printf("\nVOID POINTERS\n");
     void *p1;
     p1=p;
     // gives an derefrencing error because its not assigned any data type so no memory is laid to it
@@ -38,6 +39,7 @@ int main(int argc, char const *argv[])
     printf("address of p1=%d\n",p1);
 
     // POINTER 2 POINTER
+    printf("\nPOINTER 2 POINTER\n");
     int **q; // type=> int**
     q=&p;
     int *** r;

@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
     // even after freeing the memory still we can read,write to it
     // but it is not a good practice
     int *parr2 = (int *)realloc(parr, (size/2) * sizeof(int));
-    int *parr2 = (int *)realloc(parr, (size*2) * sizeof(int));
+    // int *parr2 = (int *)realloc(parr, (size*2) * sizeof(int));
     for (int k = 0; k <size; k++)
     {
         printf("%d ", parr[k]);
