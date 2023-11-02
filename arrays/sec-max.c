@@ -16,7 +16,7 @@ int main(int argc, char const *argv[])
             max2 = max;
             max = arr[i];
         }
-        else if (arr[i] > max2)
+        else if (arr[i] > max2 && arr[i] < max)
         {
             max2 = arr[i];
         }

@@ -4,8 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void duplicate(){}
-void delete_duplicate(){}
 int main(int argc, char const *argv[])
 {
     int i, j, k, n;
@@ -18,8 +16,6 @@ int main(int argc, char const *argv[])
     
     // count dupliactes
     int *freq = (int *)malloc(n * sizeof(int));
-    for (i = 0; i < n; i++)
-        freq[i] = -1;
     for (i = 0; i < n; i++)
     {
         int count = 1;

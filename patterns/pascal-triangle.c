@@ -1,6 +1,16 @@
 #include <stdio.h>
 
-long long fact(int n);
+long long fact(int n)
+{
+    long long factorial = 1ll;
+    while (n >= 1)
+    {
+        factorial *= n;
+        n--;
+    }
+
+    return factorial;
+}
 
 int main()
 {
@@ -21,23 +31,10 @@ int main()
         for (k = 0; k <= n; k++)
         {
             term = fact(n) / (fact(k) * fact(n - k));
-
             printf("%6lld", term);
         }
 
         printf("\n");
     }
     return 0;
-}
-
-long long fact(int n)
-{
-    long long factorial = 1ll;
-    while (n >= 1)
-    {
-        factorial *= n;
-        n--;
-    }
-
-    return factorial;
 }

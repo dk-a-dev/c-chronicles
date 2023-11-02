@@ -6,15 +6,13 @@ int main(int argc, char const *argv[])
     gets(name);
 
     char reg_no[9];
-    scanf("%[^\n]s",reg_no);
-    // printf("%s",reg_no);
+    scanf("%[^\n]s", reg_no);
 
     char sch[10];
     scanf("%[^\n]%*s", sch);
-    // printf("%s", sch);
 
     int age;
-    scanf("%d",&age);
+    scanf("%d", &age);
 
     return 0;
 }
