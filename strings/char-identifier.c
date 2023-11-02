@@ -3,7 +3,7 @@
 
 void input(char *str)
 {
-    printf("Enter a String: ",NULL);
+    printf("Enter a String: ", NULL);
     fgets(str, 100, stdin);
     printf("%s\n", str);
 }
@@ -29,7 +29,7 @@ void identifier(char *str)
 
 int main(int argc, char const *argv[])
 {
-    char str[100];
+    char *str[100];
     input((char *)str);
     identifier((char *)str);
     return 0;

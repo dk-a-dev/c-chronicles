@@ -17,7 +17,7 @@ void word_counter(char *str)
             count++;
         i++;
     }
-    printf("\nnumber of words: %d", count+1);
+    printf("\nnumber of words: %d", count + 1);
 }
 
 int main(int argc, char const *argv[])
