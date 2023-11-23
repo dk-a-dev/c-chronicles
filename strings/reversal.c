@@ -35,8 +35,8 @@ void reverse(char *str, int size)
 int main(int argc, char const *argv[])
 {
     char *str = (char *)malloc(50 * sizeof(char));
-    input((char *)str);
-    int size = length((char *)str);
-    reverse((char *)str, size);
+    input(str);
+    int size = length(str);
+    reverse(str, size);
     return 0;
 }
