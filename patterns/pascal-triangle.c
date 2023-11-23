@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-long long fact(int n)
+long fact(int n)
 {
-    long long factorial = 1ll;
+    long factorial = 1;
     while (n >= 1)
     {
         factorial *= n;
@@ -15,7 +15,7 @@ long long fact(int n)
 int main()
 {
     int n, k, num, i;
-    long long term;
+    long term;
 
     /* Input number of rows */
     printf("Enter number of rows : ");
@@ -31,7 +31,7 @@ int main()
         for (k = 0; k <= n; k++)
         {
             term = fact(n) / (fact(k) * fact(n - k));
-            printf("%6lld", term);
+            printf("%6ld", term); // %6ld for 6 digit space from left
         }
 
         printf("\n");
