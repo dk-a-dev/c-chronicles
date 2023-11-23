@@ -11,7 +11,7 @@ int main()
     scanf("%d", &num);
 
     ptr = (int *)malloc(num * sizeof(int)); // memory allocated using malloc
-    ptr = (int *)calloc(num, sizeof(int)); // memory allocated using calloc
+    ptr = (int *)calloc(num, sizeof(int));  // memory allocated using calloc
     if (ptr == NULL)
     {
         printf("Error! memory not allocated.");
