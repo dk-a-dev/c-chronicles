@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main(int argc, char const *argv[])
 {
-    int arr[5], i, max, min, maxpos = 0, minpos = 0;
+    int arr[5], i, max, min, maxpos = 1, minpos = 1;
     printf("Enter 5 numbers: ");
     for (i = 0; i < 5; i++)
         scanf("%d", &arr[i]);
