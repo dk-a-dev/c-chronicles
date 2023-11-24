@@ -10,12 +10,12 @@ int *num_getter(int num)
     num = num / 10;
     while (1)
     {
-        num = num / 10;
         if (num / 10 == 0)
         {
             first_digit = num;
             break;
         }
+        num = num / 10;
     }
     temp_arr[0] = first_digit;
     temp_arr[1] = last_digit;
