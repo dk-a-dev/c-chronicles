@@ -68,20 +68,11 @@ int reversal(int num, int num_count)
     int rev_num = 0;
     while (num_count != 0)
     {
-        int pow_num = 1;
-        for (int i = 0; i < num_count - 1; i++)
+        while (num != 0)
         {
-            pow_num = pow_num * 10;
+            rev_num = (rev_num * 10) + (num % 10);
+            num /= 10;
         }
-        rev_num += (num % 10) * pow_num;
-        num = num / 10;
-        num_count--;
-        // OPTIMISED CODE
-        // while (num != 0)
-        // {
-        //     rev_num = (rev_num * 10) + (num % 10);
-        //     num /= 10;
-        // }
     }
     return rev_num;
 }
