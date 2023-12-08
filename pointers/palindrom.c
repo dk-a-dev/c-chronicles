@@ -27,12 +27,9 @@ int main(int argc, char const *argv[])
     printf("Enter a string: ");
     scanf("%s", str);
     if (isPalindrome(str))
-    {
         printf("Palindrome\n");
-    }
     else
-    {
         printf("Not Palindrome\n");
-    }
+        
     return 0;
 }
