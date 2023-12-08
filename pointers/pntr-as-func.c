@@ -21,6 +21,7 @@ int main(int argc, char const *argv[])
     // or
     int result_2=(*pfunc2)(3,4);
 
+    pfunc1();
     printf("%d\t%d\n",result_1,result_2);
     return 0;
 }
