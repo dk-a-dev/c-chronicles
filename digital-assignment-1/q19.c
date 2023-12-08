@@ -10,17 +10,17 @@ void input()
 
 void word_conv()
 {
-    int temp,rev_num=0;
+    int rev_num=0;
     // reversal
     while(num != 0)
     {
         rev_num = (rev_num * 10) + (num % 10);
         num /= 10;
     }
+    printf("%d\n",rev_num);
 
     while(rev_num!=0){
-        temp=rev_num%10;
-        switch (temp)
+        switch (rev_num%10)
         {
         case 0:
             printf("zero ");
