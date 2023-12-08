@@ -11,6 +11,7 @@ void print(char *pchr)
         printf("%c", *pchr);
         pchr++;
     }
+    printf("\n");
 }
 
 int main(int argc, char const *argv[])
